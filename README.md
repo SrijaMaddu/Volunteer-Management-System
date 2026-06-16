@@ -1,28 +1,65 @@
-<<<<<<< HEAD
-# Volunteer-Management-System
-Volunteer Management System for NayePankh Foundation using Spring Boot and MySQL
-=======
 # Volunteer Management System
 
-A Volunteer Management System developed for NayePankh Foundation using Spring Boot, MySQL, HTML, CSS and JavaScript.
+A Full Stack Volunteer Management System developed for NayePankh Foundation using Spring Boot, MySQL, HTML, CSS, and JavaScript.
 
 ## Features
-- Volunteer Registration
-- View Volunteers
-- Edit Volunteer Details
-- Delete Volunteers
-- Search Volunteers
-- Responsive UI
+
+* Volunteer Registration
+* View Volunteers
+* Search Volunteers
+* Update Volunteer Details
+* Delete Volunteers
+* Toast Notifications
+* Responsive User Interface
+* REST API Integration
+* MySQL Database Connectivity
 
 ## Technologies Used
-- Java 21
-- Spring Boot
-- Spring Data JPA
-- MySQL
-- HTML
-- CSS
-- JavaScript
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Backend
+
+* Java 21
+* Spring Boot
+* Spring Data JPA
+
+### Database
+
+* MySQL
+
+## Project Structure
+
+```text
+FrontEnd/
+├── index.html
+├── style.css
+├── script.js
+└── images/
+
+BackEnd/
+├── Controller
+├── Model
+├── Repository
+└── Application
+```
+
+## Future Enhancements
+
+* User Authentication and Authorization
+* Volunteer Dashboard
+* Event Management Module
+* Email Notifications
+* Deployment to Cloud Platform
 
 ## Author
-Srija Maddu
->>>>>>> b9bce6c27c5db68e4fcb8515d8b7ddcb359f168b
+
+**Srija Maddu**
+
+Final Year B.Tech (Computer Science)
+
+GitHub: https://github.com/SrijaMaddu
