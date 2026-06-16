@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NayePankh Foundation</title>
+    <link rel="icon" type="image/png" href="images/logoo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo-section">
+        <img src="NayepankhLogo.png" alt="NayePankh Logo" class="logo">
+        <h1>NayePankh Foundation</h1>
+        <p>Volunteer Management System</p>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Volunteer</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h2>Empowering Youth Through Opportunities</h2>
+
+    <p>
+        Join NayePankh Foundation and make a positive impact.
+    </p>
+    <p class="hero-sub">
+        Connecting Volunteers with Social Impact Inititatives
+    </p>
+
+    <button onclick="document.querySelector('.volunteer-form').scrollIntoView({behavior:'smooth'})">
+        Become a Volunteer
+    </button>
+
+</section>
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        NayePankh Foundation is dedicated to empowering youth through education,
+        volunteering opportunities, awareness campaigns, and community development.
+    </p>
+</section>
+<section class="stats">
+    <div>
+        <h3>👥500+</h3>
+        <p>Volunteers</p>
+    </div>
+
+    <div>
+        <h3>📚100+</h3>
+        <p>Programs</p>
+    </div>
+
+    <div>
+        <h3>🌍50+</h3>
+        <p>Cities Reached</p>
+    </div>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+
+    <img src="images/education.png"
+         alt="Education">
+
+    <h3>Education</h3>
+
+    <p>
+        Supporting students through mentorship.
+    </p>
+
+</div>
+
+    <div class="card">
+        <img src="images/awareness.png" alt="Awareness">
+        <h3>Awareness</h3>
+        <p>Spreading awareness through campaigns.</p>
+    </div>
+    
+    <div class="card">
+        <img src="images/background.png" alt="Volunteering">
+        <h3>Volunteering</h3>
+        <p>Connecting passionate volunteers.</p>
+    </div>
+
+</section>
+<section class="volunteer-form">
+
+    <h2>Volunteer Registration</h2>
+
+    <form onsubmit="return false;">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <input type="text" id="phone" placeholder="Phone Number" required>
+
+        <button
+            type="button"
+            id="registerBtn"
+            onclick="registerVolunteer()">
+                    Register
+        </button>
+        <button type="button" onclick="loadVolunteers()">
+             View Volunteers
+        </button>
+
+        
+    </form>
+    <div class="search-container">
+        <input
+        type="text"
+        id="searchBox"
+        placeholder="🔍 Search by Name, Email or Phone"
+        onkeyup="searchVolunteer()">
+    </div>
+    
+    <div id="volunteerList"></div>
+    
+</section>
+<section class="contact">
+    
+    <h2>Contact Us</h2>
+    
+    <p>📧 support@nayepankh.org</p>
+    <p>📞 +91 9876543210</p>
+    
+</section>
+
+<footer>
+    <p>© 2026 NayePankh Foundation</p>
+    <p>Volunteer Management System</p>
+    <p>Developed by Srija Maddu</p>
+</footer>
+
+<script src="script.js"></script>
+<div id="message"></div>
+<div id="toast"></div>
+
+<div id="deleteModal" class="modal">
+    <div class="modal-content">
+        <h3>Delete Volunteer</h3>
+        <p>Are you sure you want to remove this volunteer?</p>
+
+        <button id="confirmDelete">Yes, Delete</button>
+        <button onclick="closeModal()">Cancel</button>
+    </div>
+</div>
+</body>
+</html>
