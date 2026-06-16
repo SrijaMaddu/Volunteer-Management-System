@@ -35,7 +35,8 @@ public class VolunteerController {
             @RequestBody Volunteer updatedVolunteer) {
 
         Volunteer volunteer = repository.findById(id)
-                .orElseThrow();
+                .orElseThrow(()->
+                new RuntimeException("Volunteer not found"));
 
         volunteer.setName(updatedVolunteer.getName());
         volunteer.setEmail(updatedVolunteer.getEmail());
